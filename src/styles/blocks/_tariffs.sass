@@ -1,0 +1,31 @@
+.tariffs
+  display: flex
+  min-height: 629px
+  height: 100%
+  align-items: flex-end
+  margin: 0 20px 60.28px
+  @media screen and (max-width: 1023px)
+    align-items: center
+    justify-content: center
+    gap: 20px
+    flex-wrap: wrap
+  &__second
+    align-self: flex-start
+    z-index: 2 !important
+    background-color: #1D252B !important
+    scale: (1.055)
+    @media screen and (max-width: 1023px)
+      scale: 1
+      align-self: center
+    &-btn 
+      background-color: $accentTextColor !important
+      border: 0.86px solid #D66567 !important
+      &:hover
+        box-shadow: 0 0 15px red 
+      &-arrow
+        width: 16px
+        height: 16px
+        object-fit: cover
+        margin-left: 9.46px
+    &-description
+      border-bottom: 0px !important

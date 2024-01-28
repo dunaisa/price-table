@@ -1,0 +1,148 @@
+.tariff
+  background-color: #6A994E
+  border-radius: 11.35px
+  max-width: 333.84px
+  width: 100%
+  min-height: 592px
+  height: 100%
+  display: flex
+  flex-direction: column
+  box-shadow: 0px 3.78px 94.62px 0px rgba(0, 0, 0, 0.25)
+  margin: 0
+  padding: 28px 0
+  box-sizing: border-box
+  animation: drop-in 3000ms ease 5000ms backwards
+  &:nth-child(1)
+    animation-delay: 1s
+  &:nth-child(2)
+     animation-delay: 1.5s
+  &:nth-child(3)
+     animation-delay: 2s
+  @keyframes drop-in 
+    0%
+      opacity: 0
+    
+    100%
+      opacity: 1
+  
+
+  &__description
+    padding: 0 60px 28.04px
+    border-bottom: 0.95px solid rgba(255, 255, 255, 0.1)
+    margin: 0 0 21.95px
+    @media screen and (max-width: 1085px)
+      padding-left: 45px
+      padding-right: 45px
+    &-text
+      padding: 0
+      margin: 0 0 15.14px
+      font-family: Inter, Arial, sans-serif
+      font-size: 12px
+      font-weight: 400
+      line-height: 16.8px
+      color: $textColor
+      opacity: 0.8
+
+  &__price-container
+    display: flex
+    padding: 0 0 15.64px
+    margin: 0 0 15.64px
+    border-bottom: 0.95px solid rgba(255, 255, 255, 0.1)
+
+  &__title
+    padding: 0
+    margin: 0 0 15.14px
+    font-family: Inter, Arial, sans-serif
+    font-size: 16px
+    font-weight: 600
+    line-height: 19.36px
+    color: $textColor
+  &__price-currency
+    padding: 0
+    font-family: Inter, Arial, sans-serif
+    font-size: 11.35px
+    font-weight: 500
+    line-height: 14.54px
+    cursor: pointer
+    transition: 0.3s
+    &:hover
+      color: $accentTextColor
+  &__price-value
+    padding: 0
+    margin: 0
+    font-family: Inter, Arial, sans-serif
+    font-size: 37.85px
+    font-weight: 800
+    line-height: 48.45px
+  &__price-period
+    padding: 0
+    margin: 0 0 10px
+    font-family: Inter, Arial, sans-serif
+    font-size: 12px
+    font-weight: 400
+    line-height: 14.52px
+    opacity: 0.7
+    align-self: end
+    cursor: pointer
+    transition: 0.3s
+    &:hover
+      color: $accentTextColor
+      opacity: 1
+  &__features
+    padding: 0 60px 0
+    @media screen and (max-width: 1085px)
+      padding-left: 45px
+      padding-right: 45px
+  &__features-heading
+    margin: 0 0 10px
+    padding: 0
+    display: block
+    font-family: Inter, Arial, sans-serif
+    font-size: 15.14px
+    font-weight: 600
+    line-height: 19.38px
+  &__plan
+    margin: 0 0 24px
+    padding: 0
+    display: block
+    font-family: Inter, Arial, sans-serif
+    font-size: 13.25px
+    font-weight: 500
+    line-height: 16.96px
+  &__features-list
+    list-style-image: url(../../images/list-marker.png)
+    margin: 0 0 0 8px
+    padding: 0
+  &__features-item
+    margin: 0 0 15.14px 7.57px
+    padding: 0
+    font-family: Inter, Arial, sans-serif
+    font-size: 12px
+    font-weight: 500
+    line-height: 15.36px
+    &_old
+      opacity: 0.8
+      font-weight: 400
+  &__btn
+    align-self: center
+    display: flex
+    justify-content: center
+    margin-top: auto
+    background-color: transparent
+    outline: none
+    border: 0.86px solid #D0D0D0
+    border-radius: 7px
+    padding: 12px 64.5px
+    font-family: Inter, Arial, sans-serif
+    font-size: 12px
+    font-weight: 500
+    line-height: 15.36px
+    color: $textColor
+    box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.1)
+    cursor: pointer
+    transition: 0.3s
+    &:hover
+      background-color: $accentTextColor !important
+      border: 0.86px solid #D66567 !important
+      box-shadow: 0 0 15px red 
+

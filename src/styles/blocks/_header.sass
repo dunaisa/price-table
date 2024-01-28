@@ -1,0 +1,143 @@
+.header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  position: relative
+  padding: 34.55px 48.36px
+  @media screen and (max-width: 815px)
+    padding: 25px 20px
+
+  &__container
+    display: flex
+    justify-content: space-between
+    width: 100%
+    @media screen and (max-width: 815px)
+      display: none
+      position: absolute
+      flex-direction: column
+      gap: 20px
+      top: 65px
+      right: 0
+      left: 0
+      align-items: center
+      justify-content: center
+      // height: 80vh
+      background: linear-gradient(153.11deg, #36603E 75%, #1E262C 150%)
+      backdrop-filter: blur(30px)
+      z-index: 10
+      &_type_active
+        display: flex
+
+  &__burger-container
+    display: none
+    @media screen and (max-width: 815px)
+      display: flex
+      width: 25px
+      height: 22px
+      position: relative
+      &.active 
+        .header__burger-span 
+          &:nth-child(1) 
+            transform: translateY(0) rotate(45deg)
+        .header__burger-span 
+          &:nth-child(2) 
+            opacity: 0
+        .header__burger-span 
+          &:nth-child(3) 
+            transform: translateY(0) rotate(-45deg)
+
+  &__burger-span 
+
+    @media screen and (max-width: 815px) 
+      position: absolute
+      padding: 0
+      margin: 0
+      display: inline-block
+      width: 100%
+      height: 2px
+      background-color: $textColor
+      top: 50%
+      cursor: pointer
+      transition: 0.3s
+
+      &:nth-child(1) 
+        transform: translateY(10px)
+      
+
+      &:nth-child(3) 
+        transform: translateY(-10px)
+      
+    
+   
+  &__list
+    display: flex
+    gap: 48.36px
+    list-style: none
+    padding: 0
+    margin: 0
+    @media screen and (max-width: 1015px)
+      gap: 35px
+    @media screen and (max-width: 815px)
+      flex-direction: column
+  &__link,
+  &__logo-link
+    padding: 0
+    margin: 0
+    font-family: Inter, Arial, sans-serif
+    font-size: 12px
+    font-weight: 400
+    line-height: 15px
+    color: $textColor
+    text-decoration: none
+    opacity: 0.8
+    transition: 0.3s
+    &:hover
+      opacity: 1
+      color: $accentTextColor
+    &_active
+      font-weight: 600
+      opacity: 1
+  &__logo-link
+    display: flex
+    align-items: center
+    opacity: 1
+    margin-right: 87.23px
+    width: 100px
+    @media screen and (max-width: 1015px)
+      margin-right: 50px
+    &:hover
+      color: $textColor
+  &__logo-name
+    text-decoration: line-through
+    font-size: 11.45px
+    font-weight: 700
+    line-height: 14.65px
+    margin: 0 0 0 3.61px
+    padding: 0
+    opacity: 1
+  &__logo-icon
+    width: 23.49px
+    height: 15.66px
+    object-fit: cover
+
+.auth
+  &__singup
+    padding: 12px 34.5px
+    border-radius: 7px
+    border: 0.86px solid #D66567
+    opacity: 1
+    background-color: $accentTextColor
+    box-sizing: border-box
+    font-size: 12px
+    font-weight: 500
+    line-height: 15.36px
+    margin-left: 13.82px
+    &:hover
+      color: $textColor
+      box-shadow: 0 0 15px red 
+  @media screen and (max-width: 815px)
+    
+    margin: 30px 0
+
+
+

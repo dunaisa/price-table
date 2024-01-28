@@ -4,6 +4,7 @@ const pricePeriod = document.querySelectorAll('.tariff__price-period');
 const tariff = document.querySelectorAll('.tariff');
 
 const dollarRate = 90;
+const euroRate = 95;
 
 priceCurrency.forEach(currency => {
   currency.addEventListener('click', function() {
@@ -12,7 +13,15 @@ priceCurrency.forEach(currency => {
         x.innerHTML = '₽'
       },
       priceValue.forEach(x => {
-        x.innerHTML = x.innerHTML * 80
+        x.innerHTML = x.innerHTML * dollarRate
+      })
+      )
+    } else if (currency.innerHTML === '₽') {
+      priceCurrency.forEach(x => {
+        x.innerHTML = '€'
+      },
+      priceValue.forEach(x => {
+        x.innerHTML = Math.round(x.innerHTML / euroRate)
       })
       )
     } else {
@@ -20,7 +29,7 @@ priceCurrency.forEach(currency => {
         x.innerHTML = '$'
       },
       priceValue.forEach(x => {
-        x.innerHTML = x.innerHTML / 80
+        x.innerHTML = Math.round(x.innerHTML * euroRate / dollarRate)
       })
       )
     }    

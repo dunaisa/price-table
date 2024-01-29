@@ -331,7 +331,7 @@ template {
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  gap: 46.5px;
+  gap: 25.95px;
 }
 .page__title {
   padding: 0 20px;
@@ -482,7 +482,7 @@ template {
   flex-direction: column;
   box-shadow: 0px 3.78px 94.62px 0px rgba(0, 0, 0, 0.25);
   margin: 0;
-  padding: 28px 0;
+  padding: 37.85px 0 28px;
   box-sizing: border-box;
   animation: drop-in 3000ms ease 5000ms backwards;
 }
@@ -520,8 +520,8 @@ template {
 }
 .tariff__price-container {
   display: flex;
-  padding: 0 0 15.64px;
-  margin: 0 0 15.64px;
+  padding: 0 0 10.64px;
+  margin: 0 0 10.64px;
   border-bottom: 0.95px solid rgba(255, 255, 255, 0.1);
 }
 .tariff__title {
@@ -555,7 +555,7 @@ template {
 }
 .tariff__price-period {
   padding: 0;
-  margin: 0 0 10px;
+  margin: 0 0 10px 5px;
   font-family: Inter, Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -734,4 +734,4 @@ template {
   }
 }
 
-/*# sourceMappingURL=main.047810ad3838d7c462b9.css.map*/
+/*# sourceMappingURL=main.726e230c2cd41be70640.css.map*/
